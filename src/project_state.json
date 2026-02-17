@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a website for Trustline Financial Services (focused on credit card sales/work).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-section-marketing-website-for-trustline-financial-services-focused-on-credit-card-sales-work-including-a-home-page-with-hero-company-name-short-tagline-services-section-how-it-works-section-about-section-and-a-clear-call-to-action-to-contact-the-company",
+      "title": "Create a responsive multi-section marketing website for “Trustline Financial Services” focused on credit card sales/work, including a Home page with: hero (company name + short tagline), Services section, How It Works section, About section, and a clear call-to-action to contact the company.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-top-navigation-bar-and-footer-with-working-anchor-links-or-routes-to-the-major-sections-pages-and-include-standard-footer-items-company-name-brief-disclaimer-text-and-social-placeholders-non-functional",
+      "title": "Add a top navigation bar and footer with working anchor links (or routes) to the major sections/pages, and include standard footer items: company name, brief disclaimer text, and social placeholders (non-functional).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-page-section-with-a-form-name-email-phone-optional-message-that-validates-inputs-on-the-client-and-shows-success-error-states-after-submission",
+      "title": "Implement a Contact page/section with a form (name, email, phone optional, message) that validates inputs on the client and shows success/error states after submission.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-admin-page-in-the-frontend-that-displays-stored-contact-submissions-by-calling-the-backend-list-method-read-only-view",
+      "title": "Add a simple admin page in the frontend that displays stored contact submissions by calling the backend list method (read-only view).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-establish-a-coherent-visual-theme-for-a-financial-services-website-distinct-typography-spacing-and-a-consistent-color-palette-and-apply-it-consistently-across-all-pages-sections-avoid-blue-purple-as-the-primary-palette",
+      "title": "Establish a coherent visual theme for a financial-services website (distinct typography, spacing, and a consistent color palette) and apply it consistently across all pages/sections (avoid blue/purple as the primary palette).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-on-page-seo-and-accessibility-defaults-descriptive-page-title-meta-description-semantic-headings-h1-h2-accessible-form-labels-and-reasonable-color-contrast",
+      "title": "Add basic on-page SEO and accessibility defaults: descriptive page title, meta description, semantic headings (H1/H2), accessible form labels, and reasonable color contrast.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-image-assets-from-frontend-public-assets-generated-and-use-them-in-the-ui-logo-and-hero-image-without-routing-images-through-the-backend",
+      "title": "Render generated image assets from frontend/public/assets/generated and use them in the UI (logo and hero image) without routing images through the backend.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-job-requirements-section-to-the-trustline-financial-services-homepage-with-professional-website-ready-copy-describing-the-requirements-for-a-credit-card-sales-role",
+      "title": "Add a new “Job Requirements” section to the Trustline Financial Services homepage with professional, website-ready copy describing the requirements for a Credit Card Sales role.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-site-navigation-to-include-an-anchor-link-to-the-new-job-requirements-section-from-the-top-navbar-and-footer-quick-links",
+      "title": "Update site navigation to include an anchor link to the new Job Requirements section from the top navbar and footer quick links.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website for Trustline Financial Services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Create backend support to store contact form submissions in the single Motoko actor, and expose query methods for an admin-like view that lists submissions (no external auth required for this initial build).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add a Job Requirements/Job Description section to the website for the credit card sales role (professional copy suitable for the site).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Trustline Financial Services",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

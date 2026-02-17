@@ -1,0 +1,20 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system using emerald green primary palette and warm neutrals for a professional financial services aesthetic, including custom animations.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme including custom font families, colors mapped to OKLCH tokens, border radius, shadows, and animations.",
+  "frontend/src/App.tsx": "Main application component managing page navigation between home and admin views, passing currentPage and onNavigate props to Footer for consistent navigation behavior across pages.",
+  "frontend/src/pages/HomePage.tsx": "Home page component composing all marketing sections including the new JobRequirementsSection, with document meta management.",
+  "frontend/src/pages/AdminSubmissionsPage.tsx": "Admin page displaying all contact form submissions with loading, error, and empty states using cards and icons.",
+  "frontend/src/components/marketing/Navbar.tsx": "Responsive navigation bar with logo, section anchor links including new \"Careers\" link to job-requirements section, mobile menu, and page navigation between home and admin.",
+  "frontend/src/components/marketing/Footer.tsx": "Footer component with company info, quick links including new \"Job Requirements\" link with smooth scroll navigation, social media placeholders, disclaimer, and Caffeine attribution with UTM tracking.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with background image overlay, company name, tagline, and call-to-action buttons.",
+  "frontend/src/components/sections/ServicesSection.tsx": "Services section displaying three service cards with icons describing credit card sales, consultation, and financial growth offerings.",
+  "frontend/src/components/sections/HowItWorksSection.tsx": "How It Works section showing a four-step process with numbered steps and descriptions, fixed parsing error and updated Tailwind classes.",
+  "frontend/src/components/sections/AboutSection.tsx": "About section with company description and three value cards highlighting trust, expertise, and client focus, updated Tailwind classes from flex-shrink-0 to shrink-0.",
+  "frontend/src/components/contact/ContactSection.tsx": "Contact form section with validation, submission handling, success/error states, and contact information cards, updated Tailwind classes from flex-shrink-0 to shrink-0.",
+  "frontend/src/hooks/useSubmitContactForm.ts": "React Query mutation hook for submitting contact forms to the backend with cache invalidation.",
+  "frontend/src/hooks/useContactSubmissions.ts": "React Query hook for fetching all contact submissions from the backend.",
+  "frontend/src/hooks/useDocumentMeta.ts": "Custom hook for dynamically setting document title and meta description per page.",
+  "frontend/src/lib/validation/contactValidation.ts": "Client-side validation logic for contact form fields including name, email, and message with error messages.",
+  "frontend/index.html": "HTML entry point with meta tags for SEO including description and proper title.",
+  "frontend/src/components/sections/JobRequirementsSection.tsx": "New section component displaying professional credit card sales job requirements in a responsive grid of cards with icons, covering education, communication, technical skills, customer handling, target-driven mindset, and professional attitude."
+}

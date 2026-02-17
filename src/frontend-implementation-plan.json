@@ -1,0 +1,55 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Job Requirements section and navigation anchors (Trustline Financial Services)",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Add a new Job Requirements section to the homepage with professional Credit Card Sales role requirements copy and an anchor id.",
+      "acceptanceCriteria": [
+        "A new section is visible on the home page with a clear H2 heading such as “Job Requirements” or “Credit Card Sales — Job Requirements”.",
+        "The section content is written in professional English and includes the key requirements discussed: minimum education (high school; degree preferred), communication skills, basic computer/CRM skills, confidence with customers, target-driven mindset, customer handling, and positive attitude.",
+        "The section uses an HTML section anchor id (e.g., id=\"job-requirements\") so it can be linked/scrolled to.",
+        "Styling is consistent with the existing site theme (cards/typography/spacing) and responsive across mobile/desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/JobRequirementsSection.tsx",
+          "operation": "create",
+          "description": "Create a new homepage section component with <section id=\"job-requirements\"> and an H2 heading (e.g., “Credit Card Sales — Job Requirements”), using shadcn-ui Card/CardContent (and existing typography/spacing patterns) to present professional English copy covering: minimum education (high school; degree preferred), communication skills, basic computer/CRM skills, confidence with customers, target-driven mindset, customer handling, and positive attitude. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Wire the new JobRequirementsSection into the homepage section flow (placed consistently among existing sections) so it renders on the Home page and can be reached via #job-requirements. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add anchor navigation links to the new Job Requirements section from the navbar and footer, matching existing smooth scrolling behavior across Home/Admin pages.",
+      "acceptanceCriteria": [
+        "Navbar includes a “Job Requirements” (or “Careers”) item that scrolls smoothly to the new section when on the Home page.",
+        "Footer “Quick Links” includes a matching link that navigates to #job-requirements.",
+        "Navigation behavior matches existing section scrolling behavior (works from Admin page by returning to Home then scrolling)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/Navbar.tsx",
+          "operation": "modify",
+          "description": "Add a new navigation item labeled “Job Requirements” (or “Careers”) in both desktop and mobile menus that uses the existing scrollToSection helper to smoothly scroll to the section id \"job-requirements\", including the existing behavior that navigates back to Home before scrolling when currently on Admin. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/marketing/Footer.tsx",
+          "operation": "modify",
+          "description": "Update Footer to include a “Job Requirements” item under Quick Links that navigates to \"#job-requirements\" and matches the existing app behavior: smooth scroll on Home, and when on Admin first navigate to Home then scroll to the target section. Implement this without changing any files under frontend/src/components/ui. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire any required props/callbacks from App into Footer (and keep Navbar behavior intact) so footer quick-link navigation can trigger home/admin switching and smooth scroll consistently across pages. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

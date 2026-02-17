@@ -1,2 +1,3 @@
-# trustline-financial-services
-Exported from Caffeine project: Trustline Financial Services
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

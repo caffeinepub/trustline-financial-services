@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Add Job Requirements section to Trustline Financial Services site",
+  "projectName": "Trustline Financial Services",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Add a new “Job Requirements” section to the Trustline Financial Services homepage with professional, website-ready copy describing the requirements for a Credit Card Sales role.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new section is visible on the home page with a clear H2 heading such as “Job Requirements” or “Credit Card Sales — Job Requirements”.",
+        "The section content is written in professional English and includes the key requirements discussed: minimum education (high school; degree preferred), communication skills, basic computer/CRM skills, confidence with customers, target-driven mindset, customer handling, and positive attitude.",
+        "The section uses an HTML section anchor id (e.g., id=\"job-requirements\") so it can be linked/scrolled to.",
+        "Styling is consistent with the existing site theme (cards/typography/spacing) and responsive across mobile/desktop."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update site navigation to include an anchor link to the new Job Requirements section from the top navbar and footer quick links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar includes a “Job Requirements” (or “Careers”) item that scrolls smoothly to the new section when on the Home page.",
+        "Footer “Quick Links” includes a matching link that navigates to #job-requirements.",
+        "Navigation behavior matches existing section scrolling behavior (works from Admin page by returning to Home then scrolling)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text.",
+    "Do not edit any files under frontend/src/components/ui or any paths listed in frontend.immutablePaths."
+  ],
+  "nonGoals": [
+    "Do not add a job application submission flow (no resume upload, no apply form, no backend storage for job applications).",
+    "Do not introduce new authentication or change the existing Admin submissions behavior.",
+    "Do not add or modify generated image assets for this change."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
